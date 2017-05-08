@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标事件</title>
+	<script type="text/javascript">
+		function openwin(){
+			window.open('http://www.imooc.com','_blank','height=600,width=400,top=100,toolbar=no,left=0,menubar=no,scrollbars=no,status=no');}
+		function add2(){
+            var numa,numb,sum;
+            numa=6;
+            numb=8;
+            sum=numa+numb;
+            document.write("两数和为:"+sum);  }
+            // 函数的功能为，写：“两数和为：14”
+        function message1(){
+            confirm("请输入密码后，再单击确定!"); }
+        function message2(){
+            alert("不要移开，点击后进行慕课网!"); }
+		</script>
+</head>
+<body>
+    <form>
+        <input name="点击我" type="button" value="点击我" onclick="add2()" /><!-- 点击以后调用add2()函数 -->
+    </form>
+
+    <form> 
+        密码:<input name="password" type="password" >
+        <input name="确定" type="button" value="确定" onmouseover="message1()" /><!-- 当鼠标移动到确定按钮时，会弹出对话框，显示信息 -->
+    </form>
+    
+    <form>
+      <a href="http://www.imooc.com" onmouseout="message2()">点击我</a><!-- 鼠标放在链接上再移开时会弹出对话框，显示信息 -->
+    </form>
+</body>
+</html>

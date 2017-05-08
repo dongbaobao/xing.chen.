@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>光标</title>
+	<script type="text/javascript">
+        function message1(){
+	      alert("请选择，您现在的职业！");
+	    }
+	    function message2(){
+          alert("请确定已输入密码后，在移开!"); }
+  </script>
+</head>
+<body>
+请选择您的职业：<br>
+  <form onfocus="message1()">
+    <select name="career"> 
+      <option>学生</option> 
+      <option>教师</option> 
+      <option>工程师</option> 
+      <option>演员</option> 
+      <option>会计</option> 
+    </select> 
+  </form>
+
+  <form>
+   用户:<input name="username" type="text" value="请输入用户名！" onblur="message2()" >
+   密码:<input name="password" type="text" value="请输入密码！" >
+  </form>
+</body>
+</html>
